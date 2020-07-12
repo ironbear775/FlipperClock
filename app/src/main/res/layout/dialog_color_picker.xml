@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@color/flipperBgColor">
+
+    <TextView
+        android:id="@+id/colorPickerTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="10dp"
+        android:textColor="@color/settingColor"
+        android:textSize="20sp"
+        tools:text="@string/save" />
+
+    <com.flask.colorpicker.ColorPickerView
+        android:id="@+id/colorPickerView"
+        android:layout_width="200dp"
+        android:layout_height="300dp"
+        android:layout_below="@id/colorPickerTitle"
+        app:alphaSlider="true"
+        app:alphaSliderView="@+id/v_alpha_slider"
+        app:density="12"
+        app:lightnessSlider="true"
+        app:lightnessSliderView="@+id/v_lightness_slider"
+        app:wheelType="FLOWER" />
+
+    <com.flask.colorpicker.slider.LightnessSlider
+        android:id="@+id/lightnessSlider"
+        android:layout_width="200dp"
+        android:layout_height="25dp"
+        android:layout_below="@id/colorPickerView" />
+
+    <com.flask.colorpicker.slider.AlphaSlider
+        android:id="@+id/alphaSlider"
+        android:layout_width="200dp"
+        android:layout_height="25dp"
+        android:layout_below="@id/lightnessSlider"
+        android:layout_marginBottom="10dp" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_toEndOf="@id/colorPickerView"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/previewView"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_marginBottom="10dp"
+            android:orientation="vertical" />
+
+        <Button
+            android:id="@+id/cancelBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/cancel" />
+
+        <Button
+            android:id="@+id/saveBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/save" />
+
+    </LinearLayout>
+
+</RelativeLayout>

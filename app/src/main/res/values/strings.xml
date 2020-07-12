@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">FlipperClock</string>
+    <string name="setting">Setting</string>
+    <string name="reset">重置</string>
+    <string name="save">保存</string>
+    <string name="cancel">取消</string>
+    <string name="save_success">保存成功</string>
+    <string name="use_12_hour">使用12小时制</string>
+    <string name="dim_when_night">23–6点降低屏幕亮度</string>
+    <string name="show_date">显示日期</string>
+    <string name="set_clock_color">设置时钟颜色</string>
+    <string name="set_clock_bg_color">设置时钟背景颜色</string>
+    <string name="set_bg_color">设置背景颜色</string>
+    <string name="show_second">显示秒</string>
+    <string name="am">AM</string>
+    <string name="pm">PM</string>
+    <string name="battery">%1$d%%</string>
+</resources>
